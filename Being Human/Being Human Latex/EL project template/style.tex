@@ -1,0 +1,33 @@
+\usepackage[margin=1in, left=1.3in]{geometry}
+
+\usepackage{tocloft}
+\renewcommand{\cftsecleader}{\cftdotfill{\cftdotsep}}
+
+
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot[C]{\thepage}
+\renewcommand{\headrulewidth}{0.5pt}
+\date{}
+
+\usepackage{titlesec}
+\titleformat{\section}
+  {\normalfont\fontsize{14}{15}\bfseries}{\thesection}{0.5em}{}
+  \titleformat{\subsection}
+  {\normalfont\fontsize{12}{15}\bfseries}{\thesubsection}{0.5em}{}
+   \titleformat{\subsubsection}
+  {\normalfont\fontsize{12}{15}\bfseries}{\thesubsubsection}{0.5em}{}
+  
+  
+\usepackage[labelfont=bf]{caption}
+\captionsetup{labelfont=bf}
+
+
+%\usepackage{epstopdf}
+\usepackage{graphics}
+\usepackage{graphicx}
+\graphicspath{ {./Images/} }
+
+
+\usepackage[nottoc]{tocbibind}
